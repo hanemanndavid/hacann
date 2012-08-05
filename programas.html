@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hacan | onsta bb?</title>
+<link rel="stylesheet" href="estilo.css" type="text/css" media="screen"></link>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+	<header>
+       	<ul>
+        	<li><a href="index.html">Inicio</a></li>
+            <li><a href="juegos.html">Juegos</a></li>
+           	<li><a href="tv.html">TV</a></li>
+            <li><a href="musicas.html">Músicas</a></li>
+            <li><a class="first sel">Programas</a></li>
+            <li><a href="libros.html">Libros</a></li>
+		</ul>
+	</header>
+    <section>
+    <h1>Clasificación
+   	</h1>
+    <div class="izq" style="background-image:url(img/soft-sistema.jpg)">
+        	<div class="overlay">
+     		</div>
+     		<div class="hover">
+        		<h2><a href="#">Sistema</a></h2>
+     		</div>
+        </div>
+        <div class="izq" style="background-image:url(img/soft-antivirus.jpg)">
+        	<div class="overlay">
+     		</div>
+     		<div class="hover">
+				<h2><a href="#">Seguridad</a></h2>
+     		</div>
+        </div>
+        <div class="izq" style="background-image:url(img/soft-resguardo.jpg)">
+        	<div class="overlay">
+     		</div>
+     		<div class="hover">
+        		<h2><a href="#">Resguardo</a></h2>
+     		</div>
+        </div>
+        <div class="izq" style="background-image:url(img/soft-oficina.jpg)">
+        	<div class="overlay">
+     		</div>
+     		<div class="hover">
+        		<h2><a href="#">Paquetes de Oficina</a></h2>
+     		</div>
+        </div>
+        <div class="izq" style="background-image:url(img/soft-imagen.jpg)">
+        	<div class="overlay">
+     		</div>
+     		<div class="hover">
+				<h2><a href="celos.html">Imágen</a></h2>
+     		</div>
+        </div>
+        <div class="izq" style="background-image:url(img/soft-video.jpg)">
+        	<div class="overlay">
+     		</div>
+     		<div class="hover">
+				<h2><a href="#">Video</a></h2>
+     		</div>
+        </div>
+        <div class="izq" style="background-image:url(img/divertido.jpg)">
+        	<div class="overlay">
+     		</div>
+     		<div class="hover">
+				<h2><a href="#">Navegadores</a></h2>
+     		</div>
+        </div>
+        <div class="izq" style="background-image:url(img/terro.jpg)">
+        	<div class="overlay">
+     		</div>
+     		<div class="hover">
+        		<h2><a href="#">Codecs de Internet</a></h2>
+     		</div>
+        </div>
+        <div class="izq" style="background-image:url(img/infantile.jpg)">
+        	<div class="overlay">
+     		</div>
+     		<div class="hover">
+        		<h2><a href="#">Gestores de Descargas</a></h2>
+     		</div>
+        </div>
+        <div class="izq" style="background-image:url(img/puzzl.jpg)">
+        	<div class="overlay">
+     		</div>
+     		<div class="hover">
+        		<h2><a href="#">Compresores</a></h2>
+     		</div>
+        </div>
+        <div class="izq" style="background-image:url(img/mentiras.jpg)">
+        	<div class="overlay">
+     		</div>
+     		<div class="hover">
+        		<h2><a href="#">Mantenimento</a></h2>
+     		</div>
+        </div>
+        <div class="izq" style="background-image:url(img/puzzl.jpg)">
+        	<div class="overlay">
+     		</div>
+     		<div class="hover">
+        		<h2><a href="#">Herramientas para CD/DVD/ISO</a></h2>
+     		</div>
+        </div>
+        <div class="izq" style="background-image:url(img/puzzl.jpg)">
+        	<div class="overlay">
+     		</div>
+     		<div class="hover">
+        		<h2><a href="#">Utilidades</a></h2>
+     		</div>
+        </div>
+        <div class="izq" style="background-image:url(img/puzzl.jpg)">
+        	<div class="overlay">
+     		</div>
+     		<div class="hover">
+        		<h2><a href="#">P2P / Torrents</a></h2>
+     		</div>
+        </div>
+        <div class="izq" style="background-image:url(img/puzzl.jpg)">
+        	<div class="overlay">
+     		</div>
+     		<div class="hover">
+        		<h2><a href="#">Sistemas Operativos</a></h2>
+     		</div>
+        </div>
+    </section>
+    <footer>
+       <ul class="copy">
+       <li>©hacan 2012</li>
+      </ul>
+      <ul>
+      	<li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Google+</a></li>
+      </ul>
+      <ul class="h">
+       <li><a href="#">Ayuda</a></li>
+       <li><a href="#">Contáctos</a></li>
+      </ul>
+    </footer>
+    <script type="text/javascript">
+				jQuery(".hover").hide();
+				jQuery(".overlay").hide();
+				
+				jQuery(".izq").hover(function() {
+				jQuery(this).children(".hover").stop().show().css({ "left" : "-450px" }).animate({left : 0}, 300);
+				jQuery(this).children(".overlay").stop().fadeTo(500, .7)
+				}
+				,function() {
+				jQuery(this).children(".hover").stop().animate({left : 450}, 300);
+				jQuery(this).children(".overlay").stop().fadeTo(500, 0)
+});
+	</script> 
+    
+</body>
+</html>
